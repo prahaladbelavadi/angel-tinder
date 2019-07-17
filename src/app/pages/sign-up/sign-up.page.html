@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Sign In</ion-title>
+    <ion-title>Sign Up</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,13 +8,18 @@
 
   <ion-card-header>
     <ion-card-title>
-      Sign in
+      Sign up
     </ion-card-title>
   </ion-card-header>
 
   <ion-card-content>
-    <form (submit)="signIn()">
+    <form (submit)="signUp()">
       <ion-list>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" name="email"></ion-input>
+        </ion-item>
 
         <ion-item>
           <ion-label position="floating">Username</ion-label>
@@ -28,7 +33,7 @@
       </ion-list>
 
       <ion-button expand="block">
-        Sign In
+        Sign Up
       </ion-button>
     </form>
   </ion-card-content>
