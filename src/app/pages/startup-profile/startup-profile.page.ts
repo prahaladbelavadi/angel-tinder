@@ -12,4 +12,8 @@ export class StartupProfilePage implements OnInit {
   ngOnInit() {
   }
 
+  uploadStartupProfile() {
+
+  }
+
 }
