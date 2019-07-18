@@ -12,8 +12,8 @@ export class SignUpPage implements OnInit {
   ngOnInit() {
   }
 
-  signup(){
-    
+  signup() {
+
   }
 
 }
