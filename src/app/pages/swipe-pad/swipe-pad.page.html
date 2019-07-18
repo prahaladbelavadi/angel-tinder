@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>swipe-pad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div id="viewport">
+        <ul class="stack" swing-stack  [stackConfig]="stackConfig"  #myswing1 (throwout)="onThrowOut($event)">
+          <li swing-card #mycards1 *ngFor="let c of cards">{{ c.symbol }}</li>
+        </ul>
+      </div>
+</ion-content>
