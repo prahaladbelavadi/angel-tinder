@@ -13,7 +13,7 @@
   </ion-card-header>
 
   <ion-card-content>
-    <form >
+    <form>
       <ion-list>
 
         <ion-item>
@@ -30,9 +30,22 @@
           <ion-label position="floating">Password</ion-label>
           <ion-input type="password" name="password"></ion-input>
         </ion-item>
+
+        <ion-radio-group>
+          <ion-item>
+            <ion-label>Angel</ion-label>
+            <ion-radio slot="start" value="Angel"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Startup</ion-label>
+            <ion-radio slot="start" value="Startup"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+
       </ion-list>
 
-      <ion-button expand="block">
+      <ion-button expand="block" (click)="signup()">
         Sign Up
       </ion-button>
     </form>
