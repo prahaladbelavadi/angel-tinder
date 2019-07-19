@@ -10,7 +10,6 @@ import {
   SwingCardComponent
 } from 'angular2-swing';
 
-
 @Component({
   selector: 'app-swipe-pad',
   templateUrl: './swipe-pad.page.html',
@@ -23,6 +22,10 @@ export class SwipePadPage {
   stackConfig: StackConfig;
 
   constructor() {
+
+
+    console.log(this.swingStack); // this is the stack
+    console.log(this.swingCards); // this is a list of cards
 
     this.stackConfig = {
       allowedDirections: [
